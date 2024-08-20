@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinamicas</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>tente abrir esse site em varios dispositivos diferentes</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/foto-m.png" type="image/png">
+        <img src="Imagens/fotos-g.png" alt="Imgem flexivel">
+    </picture>
+    <h1>aprendendo a usar audio</h1>
+   <audio preload="metadata" controls loop>
+        <source src="midias/ditchdiggin-jinglepunks.mp3" type="audio/mpeg">
+        <p>infelizmente seu navegador não consegue reproduzir som. <a href="midias/ditchdiggin-jinglepunks.mp3">clique aqui para baixar o arquivo mp3</a></p>
+   </audio>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(122, 122, 122);
+        }
+        header {
+            background-color: aliceblue;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border: 10px;
+            border-radius: 6px;
+            box-shadow: 3px 3px 1px 0px rgba(0, 0, 0, 0.397);
+        }
+        
+        footer{
+            background-color: black;
+            text-align: center;
+            color: white;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        article {
+            background-color: lightgrey;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: darkgrey;
+        }
+        nav {
+            background-color: rgb(109, 109, 109);
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.397);
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;    
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+   <header>
+    <h1>Meu site</h1>
+    <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+    </nav>
+   </header>
+   <main>
+        <section id="assuntos">
+            <p>Esportes Política e Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Nóticias do Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo consequuntur, repellendus beatae minus corrupti rerum fugiat velit sint nobis? Illum consequuntur tempora ipsam vero corrupti. Cum suscipit eveniet sunt nisi.</p>
+                <aside>
+                    <p>Escrito por</p>
+                </aside>
+            </article>
+            </section>
+   </main>
+   <footer>
+        <p>Desenvolvido por RaFzVTI</p>
+   </footer>
+</body>
+</html>

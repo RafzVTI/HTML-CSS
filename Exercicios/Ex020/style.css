@@ -1,0 +1,30 @@
+
+div {
+    display: inline-block;
+    background-color: darkgrey;
+    text-align: center;
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+}
+
+div:hover {
+    background-color: yellow;
+}
+div.pagina02 {
+    background-color: white;
+    border-color: white;
+
+} 
+div.pagina02:hover {
+    color: darkred;
+}
+div.pagina02 > p {
+    display: none;
+}
+div.pagina02:hover > p {
+    display: block;
+    color: aquamarine;
+    background-color: black;
+    width: 300px;
+}
