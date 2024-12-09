@@ -18,14 +18,24 @@ header {
     background-color: grey;
     color: white;
     padding: 10px;
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header > h1 {
     border: 1px dotted black;
+    flex: 0 0 200px;
 }
 
-nav {
+header > nav {
     border: 1px dotted black;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
 }
 
 main {
@@ -36,13 +46,17 @@ main {
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.384);
 }
 
-a {
+header > nav > a {
     text-decoration: none;
-    color: black;
-    background-color: darkgrey;
-    margin: 10px;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    margin: 5px;
 }
 
-a:hover {
+header > nav > a:hover {
+    color: black;
+    background-color: white;
     text-decoration: underline;
+    transition: background-color .5s;
 }
